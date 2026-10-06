@@ -6,7 +6,7 @@ export const StatusBadge: React.FC<StatusBadgeProps> = ({ isActive }) => (
   <View style={[styles.badge, isActive ? styles.active : styles.inactive]}>
     <View style={[styles.dot, isActive ? styles.activeDot : styles.inactiveDot]} />
     <Text style={[styles.text, isActive ? styles.activeText : styles.inactiveText]}>
-      {isActive ? 'STATUS: VERIFIED ACTIVE PASS' : 'INACTIVE'}
+      {isActive ? 'STATUS: VERIFIED ACTIVE PASS' : 'STATUS: INACTIVE PASS'}
     </Text>
   </View>
 );
